@@ -510,13 +510,16 @@ nav .gridLeft {
 .flex-row{
     display: flex;
     flex-direction:row;
-    gap: var(--Outer-Padding);
+    gap: var(--Gutter);
   }
 .sixty{
     width: 60%;
 }
 .forty{
     width: 40%;
+}
+.thirty{
+    width: 30%;
 }
 .fifty{
     width:50%;
@@ -897,6 +900,7 @@ p    {
     margin-top: 5px;
     color: var(--Body);
     font-weight: 400;
+    max-width: 800px;
 }
 /* .section p{
     max-width: 900px;
