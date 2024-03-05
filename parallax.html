@@ -3,15 +3,15 @@
         margin: 0;
     }
 
-        .wrapper {
+    .wrapper {
         height: 100vh;
         width: 100%;
         overflow-y: auto;
         overflow-x: hidden;
         perspective: 10px;
-        }
+    }
 
-        header {
+    header {
         padding: 0px;
         position: relative;
         /* display: flex; */
@@ -21,44 +21,44 @@
         width: 100%;
         transform-style: preserve-3d;
         z-index: -1;
-        }
+    }
 
-        .background {
+    .background {
             transform: translateZ(-10px) scale(1.5);
             position: absolute;
             top:-200px;
             right:-200px;
-        }
+    }
 
-        .foreground {
+    .foreground {
         transform: translateZ(-5px) scale(1.5);
-        }
+    }
 
-        .background,
-        .foreground {
+    .background,
+    .foreground {
         position: absolute;
         height: auto;
         width: 60%;
         /* object-fit: cover; */
         z-index: -1;
-        }
+    }
 
-        .title {
+    .title {
         font-size: 7rem;
         color: white;
         text-shadow: 0 0 5px black;;
-        }
+    }
 
-        section {
+    section {
         font-size: 2rem;
         padding: 2rem;
         background-color: #333;
         color: white;
-        }
+    }
 
-        text {
-            width: 100%;
-        }
+    text {
+        width: 100%;
+    }
 </style>
 <div class="wrapper">
     <header>

@@ -25,7 +25,7 @@ html {
     --OH-LAWD-HE-COMIN: 1400px;
   
     /* Scrolling */
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     scroll-padding-top: 7rem;
 
 }
