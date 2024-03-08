@@ -38,7 +38,8 @@
 
 .wrapper {
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
     overflow-x: hidden;
     perspective: 10px;
 }
