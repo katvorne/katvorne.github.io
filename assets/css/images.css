@@ -72,3 +72,7 @@ figure .flex-row{
 .clickable-img:hover{
     cursor: pointer;
 }
+
+header path {
+    fill: var(--Primary);
+}
