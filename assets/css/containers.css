@@ -93,8 +93,8 @@ header .section{
 .flex-row{
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
     gap: var(--Outer-Padding);
+    justify-content: space-between;
   }
 .seventy{
     width: 70%;

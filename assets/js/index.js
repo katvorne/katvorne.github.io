@@ -19,7 +19,7 @@ function init() {
 
     var $headingInner = $(".line-inner");
 
-    splitTextTimeline.staggerTo($headingInner, 0.7, { y:0,  force3D:true, ease: "customEase"}, 0.1);
+    splitTextTimeline.staggerTo($headingInner, 1, { y:0,  force3D:true, ease: "customEase"}, 0.2);
     // split.revert();
     splitTextTimeline.play();
 }
@@ -35,7 +35,7 @@ function debounce(func){
 document.addEventListener("DOMContentLoaded", function(event) {
     const $heading = document.querySelector("h1");
     const largeScreenContent = "<span>I’m Katarina, a UX Designer </span><br/>Crafting intentional experiences informed by user research, empathy, and a technical background";
-    const smallScreenContent = "I’m Katarina, a UX Designer Crafting intentional experiences informed by user research, empathy, and a technical background";
+    const smallScreenContent = "I’m Katarina, a UX Designer crafting intentional experiences informed by user research, empathy, and a technical background";
 
     function updateHeadingContent() {
         if (window.innerWidth > 768) {
