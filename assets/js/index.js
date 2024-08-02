@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         updateHeadingContent();
     }));
 
-    const customFont = new FontFaceObserver('Lexend');
+    const customFont = new FontFaceObserver('Outfit');
     customFont.load().then(() => {
         init();
     });
