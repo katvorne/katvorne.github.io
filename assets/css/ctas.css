@@ -30,6 +30,16 @@ button:hover{
     cursor: pointer;
 }
 
+fifty:hover ~ forty svg{
+    visibility:visible;
+    transition: all 300ms;
+    opacity: 1;
+}
+
+#Nuts-For-Reading:hover ~ fifty {
+    background-color: pink;
+}
+
 .hover-arrow svg{
     visibility: hidden;
     position: absolute;

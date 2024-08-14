@@ -19,7 +19,7 @@ nav .gridLeft {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     height: 35px; 
-    padding:1rem 0px;
+    padding:.4rem 0px;
     width:100%-20px;
     display: flex;
     position:fixed;
