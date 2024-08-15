@@ -91,10 +91,10 @@ header path {
     fill: var(--Primary);
 }
 
-.primary svg {
-    fill: var(--Primary);
-}
-
 svg{
     height:1rem;
+}
+
+header svg{
+    margin-top: 1rem;
 }
