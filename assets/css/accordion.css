@@ -60,6 +60,7 @@
 
 .accordion li{
     margin-top: .5rem !important;
+    margin-left: -22px;
 }
 .accordion ul{
     margin-bottom: 2rem;
