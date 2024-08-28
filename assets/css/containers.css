@@ -123,6 +123,9 @@ header .section{
         flex-direction:column;
         gap:1rem;
       }
+    #About .flex-row{
+        gap:0rem;
+    }
     .sixty{
         width: 100%;
     }
