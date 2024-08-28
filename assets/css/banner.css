@@ -12,6 +12,7 @@
     margin-bottom: var(--Gutter);
     line-height: 100%;
     color: var(--Heading);
+    max-width: 800px;
 }
 .Banner p, .Banner h5, .Banner a {
     color: var(--Body);

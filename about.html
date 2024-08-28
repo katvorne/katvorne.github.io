@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="assets/css/footer.css?v=1.1"></link>
     <link rel="stylesheet" href="assets/css/ctas.css?v=1.1"></link>
     <link rel="stylesheet" href="assets/css/images.css?v=1.1"></link>
+    <link rel="stylesheet" href="assets/css/accordion.css?v=1.1"></link>
     <link rel="stylesheet" href="assets/css/animations.css?v=1.1"></link>
     <link rel="icon" type="image/png" href="/favicon.png?v=1.1">
 </head>
@@ -69,55 +70,159 @@
         </div>
         </div></div>
     </nav>
-    <div class="Case-Study" id="about">
+    <div id="about">
         <div class = "content"><div class = "section fade-in-section" id="Curiosity">
-            <div class="flex-row reverse-flex">
-                <div class="forty">
-                    <div class="centerSection">
-                        <figure>
-                            <img class="max-500" alt="Headshot of Katarina Vorne" src="assets/about/katarina-vorne.png"/></a>
-                            <figcaption><p>It was love at first sticky note for me and design!</p></figcaption>
-                        </figure>
+            <div class="centerSection"><div class="text-section">
+                <h1><span>About</span><br/>It was love at first sticky note...</h1>
+                <p>for me and Design! Once I stumbled upon a course in Human Computer Interaction, I declared a minor in Collaborative Innovation Design, interned as a UX Designer, and worked as an HCI Research Assistant.</p>
+                <p>In my professional roles, I’ve set UX research standards, led interface redesigns, and ensured accessibility compliance. My experience finding product market fit with sales and marketing teams and overseeing product development with software engineers has uniquely prepared me to collaborate with cross-functional teams and design experiences at the intersection of viability, feasibility, and desirability. I’m truly grateful to do what I love most: getting to know people and empowering them through delightful experiences.</p>
+                <div class="small-gap">
+                    <div class="left fifty">
+                        <img class="soft" src="/assets/about/katarina-vorne.png"/>
+                    </div>
+                    <div class="right fifty">
+                        <img class="soft" src="/assets/about/weld.png"/>
+                        <img class="soft" src="/assets/about/open-mic.png"/>
                     </div>
                 </div>
-                <div class="sixty">
-                    <h1>Curiosity Doesn't Kill the Kat!</h1>
-                    <p>Whether I'm up to my eyeballs in user session data, thoughtfully planning my next user interview, or presenting a service blueprint to build alignment with stakeholders, I am passionate about building an understanding of our world and designing tools to empower the people in it.</p>
-                    <div class="quote">
-                        <p>“Katarina possesses a unique ability to embrace feedback and leverage it for her professional development ... She is a strong candidate for any organization looking for a UX/UI professional who not only learns quickly but also enhances the team's performance.”</p>
-                        <p class="author">- Sharon Thomas, Principal UX/UI Designer at Zurn-Elkay</p>
+                <h3 class="VertDivider">Design Values</h3>
+                <div class="flex-row">
+                    <div class="fifty">
+                        <div class="TextCardTitle">
+                            <svg width="93" height="104" viewBox="0 0 93 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M65.2093 98.6213C65.2093 100.048 64.6252 101.416 63.5856 102.425C62.546 103.433 61.136 104 59.6658 104H33.3346C31.8644 104 30.4544 103.433 29.4148 102.425C28.3753 101.416 27.7912 100.048 27.7912 98.6213C27.7912 97.1948 28.3753 95.8267 29.4148 94.818C30.4544 93.8093 31.8644 93.2426 33.3346 93.2426H59.6658C61.136 93.2426 62.546 93.8093 63.5856 94.818C64.6252 95.8267 65.2093 97.1948 65.2093 98.6213ZM88.9999 41.2486C89.0167 47.4977 87.5617 53.6679 84.746 59.2882C81.9302 64.9085 77.8282 69.8302 72.753 73.6776C72.0657 74.1857 71.5073 74.8396 71.1205 75.5893C70.7338 76.339 70.529 77.1646 70.5218 78.003V78.8994C70.5218 81.277 69.5484 83.5571 67.8157 85.2383C66.083 86.9194 63.7331 87.8639 61.2827 87.8639H31.7178C29.2674 87.8639 26.9174 86.9194 25.1848 85.2383C23.4521 83.5571 22.4787 81.277 22.4787 78.8994V78.003C22.4777 77.1785 22.2814 76.3653 21.9049 75.6262C21.5285 74.8871 20.9819 74.2419 20.3075 73.7404C15.2462 69.9152 11.1479 65.0231 8.32279 59.4343C5.49763 53.8455 4.01963 47.7065 4.00062 41.4816C3.8759 19.1466 22.4787 0.54977 45.4793 0.0119002C51.1458 -0.120211 56.7822 0.848801 62.0569 2.86191C67.3316 4.87501 72.138 7.89154 76.1933 11.734C80.2485 15.5764 83.4706 20.167 85.6699 25.2358C87.8693 30.3045 89.0015 35.7489 88.9999 41.2486ZM77.913 41.2486C77.9142 37.183 77.0772 33.1582 75.4511 29.4113C73.825 25.6643 71.4427 22.2709 68.4446 19.4307C65.4464 16.5906 61.893 14.3611 57.9934 12.8736C54.0938 11.3861 49.9269 10.6706 45.738 10.7693C28.7428 11.1637 14.9951 24.9108 15.0875 41.4189C15.1033 46.0196 16.197 50.5566 18.2857 54.6869C20.3745 58.8172 23.4038 62.4327 27.1444 65.26C29.0289 66.6712 30.5779 68.4598 31.686 70.5041C32.794 72.5483 33.4351 74.8003 33.5656 77.1065H59.4811C59.6142 74.7957 60.2561 72.5395 61.3638 70.4897C62.4714 68.44 64.019 66.6445 65.9022 65.2241C69.6536 62.379 72.6857 58.7401 74.7673 54.585C76.8488 50.4299 77.9247 45.8685 77.913 41.2486ZM68.6416 38.864C68.1512 34.8394 66.511 31.0279 63.9063 27.8598C61.3015 24.6918 57.8359 22.2932 53.9007 20.935C52.5252 20.499 51.0286 20.602 49.7303 21.2223C48.4321 21.8425 47.4353 22.9306 46.9529 24.2543C46.4704 25.578 46.5404 27.0323 47.1481 28.3065C47.7558 29.5807 48.8529 30.5739 50.2051 31.0739C52.1826 31.7464 53.9268 32.9424 55.2403 34.5266C56.5539 36.1109 57.3844 38.0201 57.6379 40.0384C57.7996 41.4566 58.5354 42.7543 59.6833 43.6462C60.2516 44.0878 60.9041 44.4164 61.6034 44.6134C62.3026 44.8103 63.0351 44.8717 63.7588 44.794C64.4825 44.7163 65.1834 44.5011 65.8214 44.1606C66.4594 43.82 67.022 43.3609 67.4771 42.8095C67.9322 42.258 68.271 41.6249 68.4739 40.9464C68.6769 40.2679 68.7402 39.5573 68.6601 38.855L68.6416 38.864Z" fill="currentColor"/>
+                                </svg>                                                                                                                                                                                               
+                        <h4>Curiosity</h4>
+                        </div>
+                        <p>I'm passionate about listening to people’s stories and eager to uncover  actionable insights. I love asking questions and unpacking contradictions.</p>
+                    </div>
+                    <div class="fifty">
+                        <div class="TextCardTitle">
+                            <svg width="24" height="24" viewBox="-1 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.1434 19.7389C14.1434 20.2416 14.1505 20.6697 14.1414 21.0978C14.1302 21.6432 13.8014 22.0038 13.3406 21.9929C12.8859 21.9819 12.5967 21.6601 12.5835 21.1127C12.5682 20.4512 12.5662 19.7886 12.5774 19.127C12.5885 18.4436 12.892 18.1794 13.5893 18.1883C14.6712 18.2022 15.7531 18.2211 16.8351 18.2092C17.5537 18.2012 17.7384 18.0145 17.7546 17.3241C17.7861 16.0337 17.8125 14.7424 17.8155 13.452C17.8155 12.9097 18.0347 12.5819 18.5767 12.4408C19.0791 12.3097 19.5734 12.1438 20.1397 11.9729C19.5206 10.8077 18.9086 9.69121 18.3321 8.55681C18.0246 7.95285 17.7759 7.32108 17.5049 6.69924C16.5001 4.39467 14.998 2.57386 12.4332 1.85269C8.79162 0.828546 3.87419 2.35334 2.1224 6.2572C1.46268 7.72637 1.43832 9.25612 1.73063 10.7839C1.92448 11.7981 2.25231 12.7964 2.60754 13.7709C2.88868 14.5407 3.42559 15.1646 4.08226 15.694C4.27307 15.848 4.42328 16.1609 4.42734 16.4043C4.4588 17.9757 4.44967 19.5492 4.44358 21.1217C4.44155 21.667 4.15331 21.9899 3.69455 21.9998C3.24188 22.0097 2.90593 21.6372 2.9039 21.0959C2.89782 19.7548 2.90695 18.4148 2.89579 17.0738C2.89477 16.9079 2.85823 16.6874 2.7476 16.5851C1.27593 15.2192 0.643616 13.454 0.28331 11.5796C-0.0465481 9.86207 -0.184581 8.12271 0.410178 6.42905C1.55098 3.1808 3.96757 1.26463 7.27224 0.406373C10.0948 -0.326719 12.8433 -0.135003 15.3299 1.53482C17.2116 2.79836 18.3372 4.61221 19.1613 6.65653C19.5622 7.65087 20.1164 8.58561 20.6066 9.5442C21.0146 10.3419 21.4358 11.1326 21.8418 11.9302C22.1717 12.5789 21.987 12.9911 21.2755 13.2136C20.8096 13.3587 20.3488 13.5295 19.8728 13.6269C19.4323 13.7173 19.3329 13.9477 19.34 14.352C19.3562 15.3613 19.3349 16.3715 19.3176 17.3807C19.2923 18.8201 18.3778 19.7111 16.8919 19.735C15.9988 19.7489 15.1056 19.7379 14.1434 19.7379V19.7389Z" fill="currentColor"/>
+                                <path d="M9.9893 6.24604C10.6064 5.6142 11.268 5.15853 12.1104 5.03891C13.5297 4.83554 14.9283 5.55439 15.5806 6.85179C16.2649 8.21226 16.114 9.84679 15.1123 10.9397C13.63 12.5569 12.1042 14.1305 10.5878 15.7117C10.2115 16.1032 9.78359 16.0935 9.40423 15.6976C7.9002 14.1283 6.3848 12.5699 4.91074 10.9702C3.6579 9.60971 3.71372 7.40968 4.97897 6.05899C6.24421 4.70721 8.31574 4.64088 9.64818 5.91C9.75051 6.00679 9.84872 6.10793 9.9893 6.24822V6.24604ZM10.0069 13.9739C11.3383 12.5764 12.6449 11.2366 13.9153 9.85984C14.6316 9.08227 14.5748 7.90776 13.8502 7.17913C13.1493 6.47442 12.0681 6.48312 11.3331 7.2074C11.0943 7.44231 10.8752 7.69896 10.6374 7.93604C10.2115 8.36125 9.7929 8.36234 9.37321 7.94256C9.09825 7.66851 8.845 7.36835 8.55659 7.1117C7.83921 6.47333 6.76003 6.52227 6.115 7.20305C5.45137 7.9045 5.35627 9.04638 6.0075 9.76305C7.30168 11.1866 8.65273 12.5547 10.0069 13.9728V13.9739Z" fill="currentColor"/>
+                                </svg>                                                                                                                                                                                                                                                          
+                            <h4>Empathy</h4>
+                        </div>
+                        <p>I’m not just designing for users. I’m designing for people. With each new thing I learn about them, I’m more driven to deliver meaningful solutions.</p>
                     </div>
                 </div>
-            </div>
-        </div></div>
-        <div class = "content"><div class = "section fade-in-section" id="Philosophy">
-            <div class="centerSection"><div class="text-section">
-                <h3>I Believe Great Design is</h3>
-                <div class="TextCardTitle">
-                    <svg width="28" height="25" viewBox="0 0 28 25" xmlns="http://www.w3.org/2000/svg"><path fill-rule="nonzero" clip-rule="nn" d="M4.66406 18.3304C5.6614 18.3304 6.61473 18.6318 7.3494 19.1838C8.0854 19.7344 8.66406 20.5971 8.66406 21.6637C8.66406 22.7304 8.0854 23.5931 7.3494 24.1438C6.61606 24.6958 5.6614 24.9971 4.66406 24.9971C3.66673 24.9971 2.7134 24.6958 1.97873 24.1438C1.24273 23.5944 0.664062 22.7304 0.664062 21.6637C0.664062 20.5971 1.24273 19.7344 1.97873 19.1838C2.71206 18.6304 3.66673 18.3304 4.66406 18.3304ZM4.66406 20.9971C4.18806 20.9971 3.8094 21.1437 3.57873 21.3171C3.41473 21.4398 3.35873 21.5438 3.33873 21.6077L3.33073 21.6637L3.34006 21.7197C3.35873 21.7838 3.41473 21.8878 3.57873 22.0117C3.8094 22.1851 4.18806 22.3304 4.66406 22.3304C5.14006 22.3304 5.51873 22.1838 5.7494 22.0104C5.9134 21.8878 5.9694 21.7838 5.9894 21.7197L5.9974 21.6637L5.98806 21.6077C5.9694 21.5438 5.9134 21.4398 5.7494 21.3158C5.51873 21.1438 5.14006 20.9971 4.66406 20.9971ZM15.2281 0.84375C17.2107 0.84375 18.9654 1.81308 20.0454 3.30242C21.2797 3.01782 22.5726 3.13462 23.736 3.6358C24.8993 4.13699 25.8723 4.9964 26.5133 6.08893C27.1544 7.18146 27.43 8.45007 27.3 9.71008C27.17 10.9701 26.6413 12.1557 25.7907 13.0944C25.7663 14.0757 25.4995 15.0356 25.014 15.8888C24.5286 16.7419 23.8396 17.4616 23.0085 17.9838C22.1773 18.506 21.2299 18.8145 20.2507 18.8817C19.2714 18.9489 18.2907 18.7728 17.3961 18.3691C16.6824 18.9375 15.8475 19.3341 14.9561 19.5284C14.0646 19.7226 13.1404 19.7092 12.255 19.4892C11.3695 19.2692 10.5466 18.8485 9.84968 18.2596C9.1528 17.6707 8.6007 16.9294 8.23606 16.0931C7.05986 15.5809 6.08071 14.7023 5.44463 13.5882C4.80855 12.4742 4.54962 11.1843 4.70645 9.9111C4.86328 8.63785 5.42747 7.44941 6.31489 6.52299C7.20231 5.59658 8.3654 4.98183 9.63073 4.77042C10.0466 3.61999 10.8071 2.62573 11.8084 1.92307C12.8098 1.22042 14.0034 0.843533 15.2267 0.84375H15.2281ZM15.2281 3.51042C14.4528 3.51051 13.7025 3.78501 13.1102 4.2853C12.5179 4.78559 12.1218 5.47937 11.9921 6.24375C11.9437 6.53266 11.8015 6.79759 11.5875 6.99762C11.3735 7.19765 11.0996 7.32163 10.8081 7.35042L10.6134 7.35575C9.82608 7.35531 9.06483 7.63786 8.46845 8.15187C7.87208 8.66588 7.4803 9.37712 7.36457 10.1559C7.24884 10.9346 7.41686 11.7291 7.83799 12.3943C8.25912 13.0595 8.90531 13.5512 9.65873 13.7797C9.86869 13.8434 10.0597 13.9578 10.2148 14.113C10.37 14.2681 10.4844 14.4591 10.5481 14.6691C10.7192 15.2317 11.0383 15.7381 11.472 16.1353C11.9057 16.5325 12.4381 16.8059 13.0136 16.927C13.5891 17.0481 14.1865 17.0125 14.7435 16.8238C15.3005 16.6351 15.7967 16.3003 16.1801 15.8544C16.396 15.6035 16.6975 15.4418 17.026 15.4009C17.3545 15.36 17.6865 15.4427 17.9574 15.6331C18.4687 15.9918 19.0717 16.1971 19.6956 16.2251C20.3195 16.2531 20.9384 16.1025 21.4798 15.791C22.0211 15.4796 22.4623 15.0201 22.7517 14.4667C23.0411 13.9132 23.1665 13.2887 23.1134 12.6664C23.096 12.4597 23.1271 12.2518 23.2042 12.0592C23.2813 11.8666 23.4022 11.6947 23.5574 11.5571C24.1472 11.0347 24.5294 10.3176 24.6343 9.53681C24.7392 8.75598 24.5597 7.96347 24.1288 7.30397C23.6978 6.64446 23.044 6.16196 22.2867 5.94455C21.5295 5.72714 20.7193 5.78932 20.0041 6.11975C19.8438 6.1939 19.6704 6.23546 19.4939 6.24203C19.3174 6.2486 19.1414 6.22004 18.976 6.15802C18.8107 6.096 18.6593 6.00174 18.5306 5.88073C18.402 5.75971 18.2987 5.61435 18.2267 5.45308C17.9679 4.87426 17.547 4.38278 17.0149 4.03804C16.4827 3.6933 15.8621 3.51004 15.2281 3.51042Z" /> </svg>                        
-                    <h4><b>Intentional</b></h4>
+                <div class="flex-row">
+                    <div class="fifty">
+                        <div class="TextCardTitle">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.57143 21.7143V20.5714H2.28571V21.7143C2.28571 23.836 3.12857 25.8708 4.62886 27.3711C6.12915 28.8714 8.16398 29.7143 10.2857 29.7143H13.7143V27.4286H10.2857C8.77019 27.4286 7.31674 26.8265 6.2451 25.7549C5.17347 24.6833 4.57143 23.2298 4.57143 21.7143ZM25.1429 10.2857V11.4286H27.4286V10.2857C27.4286 8.16398 26.5857 6.12915 25.0854 4.62886C23.5851 3.12857 21.5503 2.28572 19.4286 2.28572H16V4.57143H19.4286C20.179 4.57143 20.922 4.71923 21.6153 5.0064C22.3086 5.29357 22.9386 5.71449 23.4692 6.24511C23.9998 6.77573 24.4207 7.40566 24.7079 8.09895C24.9951 8.79224 25.1429 9.53531 25.1429 10.2857ZM10.2857 10.2857H3.42857C2.51926 10.2857 1.64719 10.6469 1.00421 11.2899C0.361224 11.9329 0 12.805 0 13.7143V16H2.28571V13.7143C2.28571 13.4112 2.40612 13.1205 2.62045 12.9062C2.83478 12.6918 3.12547 12.5714 3.42857 12.5714H10.2857C10.5888 12.5714 10.8795 12.6918 11.0938 12.9062C11.3082 13.1205 11.4286 13.4112 11.4286 13.7143V16H13.7143V13.7143C13.7143 12.805 13.3531 11.9329 12.7101 11.2899C12.0671 10.6469 11.195 10.2857 10.2857 10.2857ZM6.85714 9.14286C7.76129 9.14286 8.64512 8.87475 9.39689 8.37243C10.1487 7.87012 10.7346 7.15616 11.0806 6.32084C11.4266 5.48552 11.5171 4.56636 11.3407 3.67959C11.1643 2.79282 10.729 1.97827 10.0896 1.33894C9.4503 0.699617 8.63575 0.26423 7.74898 0.0878408C6.86221 -0.0885488 5.94305 0.00198071 5.10773 0.347981C4.27241 0.693982 3.55845 1.27991 3.05614 2.03168C2.55382 2.78345 2.28571 3.66729 2.28571 4.57143C2.28571 5.78385 2.76735 6.94661 3.62465 7.80392C4.48196 8.66123 5.64472 9.14286 6.85714 9.14286ZM6.85714 2.28572C7.30921 2.28572 7.75113 2.41977 8.12702 2.67093C8.5029 2.92209 8.79587 3.27907 8.96887 3.69673C9.14187 4.11438 9.18713 4.57397 9.09894 5.01735C9.01074 5.46074 8.79305 5.86801 8.47339 6.18767C8.15372 6.50734 7.74645 6.72503 7.30306 6.81323C6.85968 6.90142 6.4001 6.85616 5.98244 6.68316C5.56478 6.51015 5.2078 6.21719 4.95664 5.8413C4.70548 5.46542 4.57143 5.0235 4.57143 4.57143C4.57143 3.96522 4.81224 3.38384 5.2409 2.95519C5.66955 2.52653 6.25093 2.28572 6.85714 2.28572ZM28.5714 26.2857H21.7143C20.805 26.2857 19.9329 26.6469 19.2899 27.2899C18.6469 27.9329 18.2857 28.805 18.2857 29.7143V32H20.5714V29.7143C20.5714 29.4112 20.6918 29.1205 20.9062 28.9062C21.1205 28.6918 21.4112 28.5714 21.7143 28.5714H28.5714C28.8745 28.5714 29.1652 28.6918 29.3795 28.9062C29.5939 29.1205 29.7143 29.4112 29.7143 29.7143V32H32V29.7143C32 28.805 31.6388 27.9329 30.9958 27.2899C30.3528 26.6469 29.4807 26.2857 28.5714 26.2857ZM20.5714 20.5714C20.5714 21.4756 20.8395 22.3594 21.3419 23.1112C21.8442 23.8629 22.5581 24.4489 23.3934 24.7949C24.2288 25.1409 25.1479 25.2314 26.0347 25.055C26.9215 24.8786 27.736 24.4432 28.3753 23.8039C29.0147 23.1646 29.4501 22.35 29.6264 21.4633C29.8028 20.5765 29.7123 19.6573 29.3663 18.822C29.0203 17.9867 28.4344 17.2727 27.6826 16.7704C26.9308 16.2681 26.047 16 25.1429 16C23.9304 16 22.7677 16.4816 21.9104 17.3389C21.0531 18.1963 20.5714 19.359 20.5714 20.5714ZM27.4286 20.5714C27.4286 21.0235 27.2945 21.4654 27.0434 21.8413C26.7922 22.2172 26.4352 22.5102 26.0176 22.6832C25.5999 22.8562 25.1403 22.9014 24.6969 22.8132C24.2535 22.725 23.8463 22.5073 23.5266 22.1877C23.2069 21.868 22.9893 21.4607 22.9011 21.0173C22.8129 20.574 22.8581 20.1144 23.0311 19.6967C23.2041 19.2791 23.4971 18.9221 23.873 18.6709C24.2489 18.4198 24.6908 18.2857 25.1429 18.2857C25.7491 18.2857 26.3304 18.5265 26.7591 18.9552C27.1878 19.3838 27.4286 19.9652 27.4286 20.5714Z"/></svg>                        
+                            <h4>Collaboration</h4>
+                        </div>
+                        <p>I communicate with and lift the voices of cross-functional teams, seek advice from domain experts, and help potential users express their tacit needs.</p>
+                    </div>
+                    <div class="fifty">
+                        <div class="TextCardTitle">
+                            <svg width="18" height="15" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M7.5 12C8.5878 12 9.65117 11.6774 10.5556 11.0731C11.4601 10.4687 12.1651 9.60976 12.5813 8.60476C12.9976 7.59977 13.1065 6.4939 12.8943 5.42701C12.6821 4.36011 12.1583 3.3801 11.3891 2.61092C10.6199 1.84173 9.63989 1.3179 8.573 1.10568C7.5061 0.893465 6.40023 1.00238 5.39524 1.41867C5 1.58238 4 2.2517 3.5 3C2.89565 3.90447 3 5.41221 3 6.5V7M3 7L1.5 5.42701M3 7L4.5 5.42701M2 12H17M17 12L15.5 10.5M17 12L15.5 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                
+                            <h4>Adaptability</h4>
+                        </div>
+                        <p>I embrace ambiguity and follow an iterative process, refining research strategies and designs as I grow in understanding of users and their needs.</p>  
+                    </div>
                 </div>
-                <p>Every decision I make has an impact on the users' experience and therefore must be informed by research, empathy, and expertise.</p>
-                <div class="TextCardTitle">
-                    <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 0.5C18.7388 0.5 16.51 1.49125 15 3.195C13.49 1.49125 11.2612 0.5 8.75 0.5C6.56278 0.502646 4.46589 1.37269 2.91929 2.91929C1.37269 4.46589 0.502646 6.56278 0.5 8.75C0.5 17.7925 13.7262 25.0175 14.2887 25.3213C14.5073 25.439 14.7517 25.5006 15 25.5006C15.2483 25.5006 15.4927 25.439 15.7113 25.3213C16.2738 25.0175 29.5 17.7925 29.5 8.75C29.4974 6.56278 28.6273 4.46589 27.0807 2.91929C25.5341 1.37269 23.4372 0.502646 21.25 0.5ZM20.5637 18.295C18.8228 19.7723 16.9618 21.1019 15 22.27C13.0382 21.1019 11.1772 19.7723 9.43625 18.295C6.7275 15.9713 3.5 12.4275 3.5 8.75C3.5 7.35761 4.05312 6.02225 5.03769 5.03769C6.02225 4.05312 7.35761 3.5 8.75 3.5C10.975 3.5 12.8375 4.675 13.6112 6.5675C13.7239 6.84338 13.9161 7.07947 14.1634 7.24566C14.4108 7.41185 14.702 7.5006 15 7.5006C15.298 7.5006 15.5892 7.41185 15.8366 7.24566C16.0839 7.07947 16.2761 6.84338 16.3888 6.5675C17.1625 4.675 19.025 3.5 21.25 3.5C22.6424 3.5 23.9777 4.05312 24.9623 5.03769C25.9469 6.02225 26.5 7.35761 26.5 8.75C26.5 12.4275 23.2725 15.9713 20.5637 18.295Z"/></svg>                        
-                    <h4><b>Compassionate</b></h4>
+                <div class="flex-row">
+                    <div class="fifty">
+                        <div class="TextCardTitle">
+                            <svg width="30" height="26" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.25 0.5C18.7388 0.5 16.51 1.49125 15 3.195C13.49 1.49125 11.2612 0.5 8.75 0.5C6.56278 0.502646 4.46589 1.37269 2.91929 2.91929C1.37269 4.46589 0.502646 6.56278 0.5 8.75C0.5 17.7925 13.7262 25.0175 14.2887 25.3213C14.5073 25.439 14.7517 25.5006 15 25.5006C15.2483 25.5006 15.4927 25.439 15.7113 25.3213C16.2738 25.0175 29.5 17.7925 29.5 8.75C29.4974 6.56278 28.6273 4.46589 27.0807 2.91929C25.5341 1.37269 23.4372 0.502646 21.25 0.5ZM20.5637 18.295C18.8228 19.7723 16.9618 21.1019 15 22.27C13.0382 21.1019 11.1772 19.7723 9.43625 18.295C6.7275 15.9713 3.5 12.4275 3.5 8.75C3.5 7.35761 4.05312 6.02225 5.03769 5.03769C6.02225 4.05312 7.35761 3.5 8.75 3.5C10.975 3.5 12.8375 4.675 13.6112 6.5675C13.7239 6.84338 13.9161 7.07947 14.1634 7.24566C14.4108 7.41185 14.702 7.5006 15 7.5006C15.298 7.5006 15.5892 7.41185 15.8366 7.24566C16.0839 7.07947 16.2761 6.84338 16.3888 6.5675C17.1625 4.675 19.025 3.5 21.25 3.5C22.6424 3.5 23.9777 4.05312 24.9623 5.03769C25.9469 6.02225 26.5 7.35761 26.5 8.75C26.5 12.4275 23.2725 15.9713 20.5637 18.295Z"/></svg>                        
+                            <h4>Accessibility</h4>
+                        </div>
+                        <p>I believe that understanding the context around people’s needs—such as their environments, situations, and abilities—leads to better products for everyone.</p>
+                    </div>
+                    <div class="fifty">
+                        <div class="TextCardTitle">
+                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5063 14.1063C13.8376 14.1063 14.1063 13.8376 14.1063 13.5063C14.1063 13.1749 13.8376 12.9062 13.5063 12.9062C13.1749 12.9062 12.9062 13.1749 12.9062 13.5063C12.9062 13.8376 13.1749 14.1063 13.5063 14.1063Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.1 13.5C5.1 14.6031 5.31727 15.6954 5.73941 16.7145C6.16155 17.7337 6.78029 18.6597 7.5603 19.4397C8.34032 20.2197 9.26632 20.8385 10.2855 21.2606C11.3046 21.6827 12.3969 21.9 13.5 21.9M5.1 13.5C5.1 12.3969 5.31727 11.3046 5.73941 10.2855C6.16155 9.26632 6.78029 8.34032 7.5603 7.5603C8.34032 6.78029 9.26632 6.16155 10.2855 5.73941C11.3046 5.31727 12.3969 5.1 13.5 5.1M5.1 13.5H1.5M13.5 21.9C14.6031 21.9 15.6954 21.6827 16.7145 21.2606C17.7337 20.8385 18.6597 20.2197 19.4397 19.4397C20.2197 18.6597 20.8385 17.7337 21.2606 16.7145C21.6827 15.6954 21.9 14.6031 21.9 13.5M13.5 21.9V25.5M21.9 13.5C21.9 12.3969 21.6827 11.3046 21.2606 10.2855C20.8385 9.26632 20.2197 8.34032 19.4397 7.5603C18.6597 6.78029 17.7337 6.16155 16.7145 5.73941C15.6954 5.31727 14.6031 5.1 13.5 5.1M21.9 13.5H25.5M13.5 5.1V1.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                                                                           
+                            <h4>Simplicity</h4>
+                        </div>
+                        <p>I distill complex problems into digestible insights and craft designs that prioritize clarity and ease of use to allow people to focus on their jobs to be done.</p>   
+                    </div>
                 </div>
-                <p>I’m not just designing for users. I’m designing for people. With each new thing I learn about them, I am more driven to deliver empowering solutions.</p>   
-                
-                <div class="TextCardTitle">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.57143 21.7143V20.5714H2.28571V21.7143C2.28571 23.836 3.12857 25.8708 4.62886 27.3711C6.12915 28.8714 8.16398 29.7143 10.2857 29.7143H13.7143V27.4286H10.2857C8.77019 27.4286 7.31674 26.8265 6.2451 25.7549C5.17347 24.6833 4.57143 23.2298 4.57143 21.7143ZM25.1429 10.2857V11.4286H27.4286V10.2857C27.4286 8.16398 26.5857 6.12915 25.0854 4.62886C23.5851 3.12857 21.5503 2.28572 19.4286 2.28572H16V4.57143H19.4286C20.179 4.57143 20.922 4.71923 21.6153 5.0064C22.3086 5.29357 22.9386 5.71449 23.4692 6.24511C23.9998 6.77573 24.4207 7.40566 24.7079 8.09895C24.9951 8.79224 25.1429 9.53531 25.1429 10.2857ZM10.2857 10.2857H3.42857C2.51926 10.2857 1.64719 10.6469 1.00421 11.2899C0.361224 11.9329 0 12.805 0 13.7143V16H2.28571V13.7143C2.28571 13.4112 2.40612 13.1205 2.62045 12.9062C2.83478 12.6918 3.12547 12.5714 3.42857 12.5714H10.2857C10.5888 12.5714 10.8795 12.6918 11.0938 12.9062C11.3082 13.1205 11.4286 13.4112 11.4286 13.7143V16H13.7143V13.7143C13.7143 12.805 13.3531 11.9329 12.7101 11.2899C12.0671 10.6469 11.195 10.2857 10.2857 10.2857ZM6.85714 9.14286C7.76129 9.14286 8.64512 8.87475 9.39689 8.37243C10.1487 7.87012 10.7346 7.15616 11.0806 6.32084C11.4266 5.48552 11.5171 4.56636 11.3407 3.67959C11.1643 2.79282 10.729 1.97827 10.0896 1.33894C9.4503 0.699617 8.63575 0.26423 7.74898 0.0878408C6.86221 -0.0885488 5.94305 0.00198071 5.10773 0.347981C4.27241 0.693982 3.55845 1.27991 3.05614 2.03168C2.55382 2.78345 2.28571 3.66729 2.28571 4.57143C2.28571 5.78385 2.76735 6.94661 3.62465 7.80392C4.48196 8.66123 5.64472 9.14286 6.85714 9.14286ZM6.85714 2.28572C7.30921 2.28572 7.75113 2.41977 8.12702 2.67093C8.5029 2.92209 8.79587 3.27907 8.96887 3.69673C9.14187 4.11438 9.18713 4.57397 9.09894 5.01735C9.01074 5.46074 8.79305 5.86801 8.47339 6.18767C8.15372 6.50734 7.74645 6.72503 7.30306 6.81323C6.85968 6.90142 6.4001 6.85616 5.98244 6.68316C5.56478 6.51015 5.2078 6.21719 4.95664 5.8413C4.70548 5.46542 4.57143 5.0235 4.57143 4.57143C4.57143 3.96522 4.81224 3.38384 5.2409 2.95519C5.66955 2.52653 6.25093 2.28572 6.85714 2.28572ZM28.5714 26.2857H21.7143C20.805 26.2857 19.9329 26.6469 19.2899 27.2899C18.6469 27.9329 18.2857 28.805 18.2857 29.7143V32H20.5714V29.7143C20.5714 29.4112 20.6918 29.1205 20.9062 28.9062C21.1205 28.6918 21.4112 28.5714 21.7143 28.5714H28.5714C28.8745 28.5714 29.1652 28.6918 29.3795 28.9062C29.5939 29.1205 29.7143 29.4112 29.7143 29.7143V32H32V29.7143C32 28.805 31.6388 27.9329 30.9958 27.2899C30.3528 26.6469 29.4807 26.2857 28.5714 26.2857ZM20.5714 20.5714C20.5714 21.4756 20.8395 22.3594 21.3419 23.1112C21.8442 23.8629 22.5581 24.4489 23.3934 24.7949C24.2288 25.1409 25.1479 25.2314 26.0347 25.055C26.9215 24.8786 27.736 24.4432 28.3753 23.8039C29.0147 23.1646 29.4501 22.35 29.6264 21.4633C29.8028 20.5765 29.7123 19.6573 29.3663 18.822C29.0203 17.9867 28.4344 17.2727 27.6826 16.7704C26.9308 16.2681 26.047 16 25.1429 16C23.9304 16 22.7677 16.4816 21.9104 17.3389C21.0531 18.1963 20.5714 19.359 20.5714 20.5714ZM27.4286 20.5714C27.4286 21.0235 27.2945 21.4654 27.0434 21.8413C26.7922 22.2172 26.4352 22.5102 26.0176 22.6832C25.5999 22.8562 25.1403 22.9014 24.6969 22.8132C24.2535 22.725 23.8463 22.5073 23.5266 22.1877C23.2069 21.868 22.9893 21.4607 22.9011 21.0173C22.8129 20.574 22.8581 20.1144 23.0311 19.6967C23.2041 19.2791 23.4971 18.9221 23.873 18.6709C24.2489 18.4198 24.6908 18.2857 25.1429 18.2857C25.7491 18.2857 26.3304 18.5265 26.7591 18.9552C27.1878 19.3838 27.4286 19.9652 27.4286 20.5714Z"/></svg>                        
-                    <h4><b>Collaborative</b></h4>
-                </div>
-                <p>I democratize design, using tools to lift the voices of cross-functional teams and potential users, leading to better outcomes for the business and users.</p>    
-            </div></div>
-        </div></div>
-        <div class = "content"><div class = "section fade-in-section" id="Story">
-            <div class="centerSection"><div class="text-section">
-                <h3>How I got Here and Where I’m Going</h3>
-                <p>Looking for the power to make a positive impact on peoples’ daily lives, I decided to study Software Engineering. Unfortunately, I often felt out of place. While my classmates were asking how to run a SQL query, I was asking which database type would give an experience of consistency and security.</p>
-                <p>It wasn’t until I took courses in Human Computer Interaction and Design Thinking that I felt I was making the most of the curiosity and compassion that brought me to Tech in the first place. I felt at home working together with people of all academic backgrounds towards the common goals of understanding and serving the needs of others.</p>
-                <p>Nowadays, once I’ve closed my small army of Adobe apps, I spend my time singing, sketching, and meandering, with and without my adorable Alaskan Klee Kai, taking in the weird and wonderful world around me.</p>
-                <p>For my next step, I’m looking to contribute to and learn from a passionate, collaborative, and cross-functional team that values research and empathy-informed, intentional design. If this sounds like you, I’d love to connect at <a aria-label="email" href="mailto:hello@kvorne.com">Hello@kvorne.com</a> !</p>
+                <h3 class="VertDivider">Design Process</h3>
+                <p>I choose design techniques and tools based on the context of each unique team, brand, product, and target user group. My process is rarely linear, but I generally work in the following phases to answer key questions:</p>
+                <section>
+                    <div class="accordion">
+                        <input id="Context" checked type="radio" class="accordion-toggle" name="dev-toggle" />
+                        <label for="Context">Building Context<svg width="24" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 11L8.82353 2L16 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
+                        <section>
+                            <ul>
+                                <li><span>What are our project requirements, business goals, and target market?</span></li>
+                                <li><span>What are our Objectives and Key Results (OKRs)?</span></li>
+                                <li><span>Do we need to adjust our team, timeline, or scope to realistically meet our OKRs?</span></li>
+                                <li><span>What trends, competitors, or emerging technologies could impact our design?</span></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="accordion">
+                        <input id="Empathy"  type="radio" class="accordion-toggle" name="dev-toggle" />
+                        <label for="Empathy">Empathizing with Users<svg width="24" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 11L8.82353 2L16 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
+                        <section>
+                            <ul>
+                                <li><span>What existing research can we use to inform our study?</span></li>
+                                <li><span>What assumptions are we making, and how can we test them?</span></li>
+                                <li><span>Who are our target and extreme users?</span></li>
+                                <li><span>How does what users say compare to what they do? What causes discrepancies?</span></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="accordion">
+                        <input id="Define"  type="radio" class="accordion-toggle" name="dev-toggle" />
+                        <label for="Define">Defining User Needs<svg width="24" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 11L8.82353 2L16 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
+                        <section>
+                            <ul>
+                                <li><span>Where do user’s goals align with our business goals and expertise?</span></li>
+                                <li><span>What obstacles do users face in achieving their goals, and what is the context?</span></li>
+                                <li><span>What is the highest root cause of these obstacles that we can address?</span></li>
+                                <li><span>How do they get around these obstacles?</span></li>
+                                <li><span>What patterns are there among those who share the same obstacles?</span></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="accordion">
+                        <input id="Brainstorm"  type="radio" class="accordion-toggle" name="dev-toggle" />
+                        <label for="Brainstorm">Brainstorming Solutions<svg width="24" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 11L8.82353 2L16 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
+                        <section>
+                            <ul>
+                                <li><span>What are silly/outrageous ways to solve this problem?</span></li>
+                                <li><span>What would an ideal solution look like from the user’s perspective?</span></li>
+                                <li><span>What constraints and opportunities do we have?</span></li>
+                                <li><span>Which ideas align most closely with user needs and business goals?</span></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="accordion">
+                        <input id="Iterate"  type="radio" class="accordion-toggle" name="dev-toggle" />
+                        <label for="Iterate">Iterating Solutions<svg width="24" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 11L8.82353 2L16 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
+                        <section>
+                            <ul>
+                                <li><span>What question do we want each prototype to answer?</span></li>
+                                <li><span>What level of fidelity will help us answer our questions?</span></li>
+                                <li><span>What elements of each design are working well, and what needs improvement?</span></li>
+                                <li><span>How can we measure the effectiveness of a solution?</span></li>
+                                <li><span>What is the minimum loveable product? How can this design grow over time?</span></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="accordion">
+                        <input id="Deliver"  type="radio" class="accordion-toggle" name="dev-toggle" />
+                        <label for="Deliver">Delivering a Solution<svg width="24" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 11L8.82353 2L16 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></label>
+                        <section>
+                            <ul>
+                                <li><span>How can we ensure a seamless handoff between design and development?</span></li>
+                                <li><span>What are the key milestones and deliverables for this project?</span></li>
+                                <li><span>How will we measure the success of the final solution post-launch?</span></li>
+                                <li><span>What is our plan for post-launch support and future iterations?</span></li>
+                            </ul>
+                        </section>
+                    </div>
+            </section>
             </div></div>
         </div></div>
         <div class="Footer">

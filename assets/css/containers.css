@@ -3,7 +3,7 @@
     height: fit-content;
 }
 .VertDivider{
-    margin-top: 50px !important;
+    margin-top: 5rem !important;
 }
 .learnMoreMargin{
     margin-top: var(--Gutter) !important;
@@ -89,6 +89,8 @@ header .section{
     color: var(--Primary);
     margin: 0px;
     margin-bottom: .5rem;
+    font-weight: 450;
+    font-size: 1.2rem;
 }
 .flex-row{
     display: flex;
@@ -202,6 +204,17 @@ header .section{
     grid-column-end: 7;
 }
 
+.small-gap{
+    column-gap: 1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom: 7.2rem;
+}
+
+.small-gap img {
+    margin: 1rem 0rem -.2rem 0rem;
+}
 
 .noMobile{
     display: block;

@@ -1,19 +1,85 @@
-.tabs{
+/**
+ * Tabs
+ */
+ .tabs {
 	display: flex;
-}
-.tab{
-	display: block;
-	width: fit-content;
-	margin-bottom: 1rem;
+	flex-wrap: wrap;
 }
 
-.tab-toggle{
+.tab-label {
+	order: 1; /* Put the labels first */
+	display: block;
+	position: relative;
+	padding-bottom: 16px;
+	line-height: 150%;
+	font-size: 1.1rem;
+	font-weight: 350;
+	cursor: pointer;
+	padding: .3rem 1rem;
+	border-radius: 1.1rem;
+	margin-right: .1rem;
+	color: var(--Shadow);
+	transition: all .3s ease-in-out;
+}
+
+.tabs .tab {
+	order: 2; /* Put the tabs last */
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	height: 0; /* Collapse the height */
+	overflow: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.tabs input[type="radio"] {
+	display: none;
+}
+
+.tabs input[type="radio"]:checked + .tab-label + .tab {
+	opacity: 1;
+	visibility: visible;
+	height: auto; /* Expand to fit content */
+	transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.tabs input[type="radio"]:hover + .tab-label {
+	color: var(--Body);
+	transition: all .3s ease-in-out;
+}
+
+.tabs input[type="radio"]:checked + .tab-label {
+	color: var(--Page-Bg);
+	background-color: var(--Body);
+}
+
+@media (max-width: 45em) {
+	.tabs {
+		flex-direction: column;
+	}
+
+	.tab-label {
+		margin-right: 0;
+		margin-bottom: 0.2rem; /* Space between labels */
+	}
+
+	.tabs .tab {
+		padding-top: 0.2rem; /* Space between labels and content */
+	}
+}
+
+.tab {
+	display: block;
+	width: fit-content;
+}
+
+.tab-toggle {
 	position: absolute;
 	opacity: 0;
 	display: none;
 }
 
-.tab > label{
+.tab > .tab-label {
 	position: relative;
 	display: block;
 	padding-bottom: 16px;
@@ -22,32 +88,19 @@
 	font-weight: 350;
 	cursor: pointer;
 	padding: .3rem 1rem;
-	border-radius: 1rem;
+	border-radius: 1.1rem;
 	color: var(--Shadow);
 	transition: all .3s ease-in-out;
 }
-.tab-toggle > section{
+
+.tab-toggle > section {
 	max-height: 0;
 	transition: .3s all;
 	overflow: hidden;
-	
 }
 
-.tab > .tab-toggle:checked ~ label {
-	color: var(--Body);
-	background-color: var(--Accent);
-}
-
-.tab > .tab-toggle:hover ~ label {
-	color: var(--Body);
-	transition: all .3s ease-in-out;
-}
-
-@media  (min-width: 0px) and (max-width: 768px){
-	.tabs{
-		display: block;
-	}
-	.tab > label{
-		margin-bottom:.5rem;
+@media (min-width: 0px) and (max-width: 768px) {
+	.tab > .tab-label {
+		margin-bottom: 0.5rem;
 	}
 }

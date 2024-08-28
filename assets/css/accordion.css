@@ -1,9 +1,10 @@
 /* Adapted from https://codepen.io/NeZaMy/pen/ZWNePP */
 .accordion:first-of-type{
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 1rem 1rem 0rem 0rem;
+    margin-top: 1rem;
 }
 .accordion:last-of-type{
-    border-radius: 0px 0px 32px 32px;
+    border-radius: 0rem 0rem 1rem 1rem;
     padding-bottom: 24px;
 }
 .accordion:last-of-type > section{
@@ -26,8 +27,8 @@
 	display: block;
 	padding-bottom: 16px;
 	line-height: 150%;
-	font-size: 1rem;
-	font-weight: 600;
+	font-size: 1.1rem;
+	font-weight: 450;
 	cursor: pointer;
 }
 
@@ -36,12 +37,12 @@
     top: 5px;
     right: 0px;
     transform: rotate(0deg);
-    transition: .3s transform;
+    transition: .5s transform;
   }
 
 .accordion > section{
 	max-height: 0;
-	transition: .3s all;
+	transition: .5s all;
 	overflow: hidden;
     border-bottom: .5px solid var(--Shadow);
 }
@@ -51,16 +52,15 @@
 }
 
 .accordion > .accordion-toggle:checked ~ section{
-  max-height: 200px;
-}
-
-#Design-Section{
-    display: none;
-}
-
-#Design:checked ~ #Design-Section{
-    display:block;
+  max-height: 500px;
 }
 #Design-Section{
-    display: none;
+    display: block;
+}
+
+.accordion li{
+    margin-top: .5rem !important;
+}
+.accordion ul{
+    margin-bottom: 2rem;
 }
