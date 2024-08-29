@@ -29,7 +29,7 @@ button:hover{
     cursor: pointer;
 }
 #overview button{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .hover-arrow svg{
